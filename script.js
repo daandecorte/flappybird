@@ -58,7 +58,9 @@ function loop() {
     tijd++;
 }
 interval = setInterval(loop, speed);
-document.body.onkeydown = function() {
+document.body.onkeydown = springFunctie;
+document.body.onclick = springFunctie;
+function springFunctie() {
     springen=true;
     teller=0;
     if(spelen == false) {
