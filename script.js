@@ -59,7 +59,7 @@ function loop() {
 }
 interval = setInterval(loop, speed);
 document.body.onkeydown = springFunctie;
-document.body.onclick = springFunctie;
+document.body.onmousedown = springFunctie;
 function springFunctie() {
     springen=true;
     teller=0;
