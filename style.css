@@ -1,11 +1,67 @@
 canvas {
-    border: 2px solid black;
     background-image: radial-gradient(white, lightskyblue);
+    z-index: 0;
+    border-radius: 1rem;
 }
 body {
     overflow: hidden;
-    background-color: black;
+    background-color: #0f4051;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+#scorebord div {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #ee9a12;
+    font-size: 1.5rem;
+}
+#scorebord {
+    margin: 1rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 3.1rem;
+    background-color: #ffb9498e;
+    z-index: 1;
+    height: 14rem;
+    width: 13rem;
+    border: 0.3rem solid #ee9a12;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+} #punten {
+    display: block;
+    margin-top: 0.5rem;
+    color: #ee9a12;
+}
+p {
+    color: #faf6ef;
+    margin-top: -0.1rem;
+    opacity: 1;
+}
+section {
+    position: absolute;
+    top: 1rem;
+    right:1rem;
+    z-index: 1;
+    display: flex;
+    width: 15rem;
+}
+button {
+    border: 2px solid #ee9a12;
+    background-color: #0f4051;
+    color: #faf6ef;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+input {
+    border: 2px solid #ee9a12;
+    background-color: #0f4051;
+    border-radius: 0.5rem;
+    color: #faf6ef;
 }
